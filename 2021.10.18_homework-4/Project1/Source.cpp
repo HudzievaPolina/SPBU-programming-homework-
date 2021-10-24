@@ -75,19 +75,19 @@ int main(int argc, char* argv[])
 
 	int secmax = 0;
 
-	if (a[0] < max)
+	for (int i = 0; i < n; ++i)
 	{
-		secmax = a[0];
-	}
-	else
-	{
-		secmax = a[1];
+		if (a[i] < max)
+		{
+			secmax = a[i];
+			break;
+		}
 	}
 	cout << "SECOND MAX: ";
 
 	for (int i = 1; i < n; ++i)
 	{
-		if (a[i] > secmax || a[i] < max)
+		if (a[i] > secmax && a[i] < max)
 		{
 			secmax = a[i];
 		}
