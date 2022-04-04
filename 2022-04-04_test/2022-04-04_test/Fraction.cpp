@@ -16,7 +16,7 @@ Fraction::~Fraction()
 	}
 }
 
-double Fraction::getNumerator()
+long long Fraction::getNumerator()
 {
 	return this->numerator;
 }
@@ -24,7 +24,7 @@ void Fraction::setNumerator(double x)
 {
 	this->numerator = x;
 }
-double Fraction::getDenominator()
+long long Fraction::getDenominator()
 {
 	return this->denominator;
 }

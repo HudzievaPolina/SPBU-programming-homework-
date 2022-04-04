@@ -14,9 +14,9 @@ class Fraction
 		Fraction(const Fraction& fraction);
 		~Fraction();
 
-		double getNumerator();
+		long long getNumerator();
 		void setNumerator(double x);
-		double getDenominator();
+		long long getDenominator();
 		void setDenominator(double y);
 
 		Fraction& operator=(const Fraction& fraction);
